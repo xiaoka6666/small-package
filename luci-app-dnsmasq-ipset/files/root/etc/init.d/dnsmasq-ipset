@@ -43,7 +43,7 @@ gen_config_file() {
     fi
     link_config() {
         local cfg="${1}"
-        [ -d "/tmp/dnsmasq.${cfg}.d" ] && ln -sf "${config_file_name}" "/tmp/dnsmasq.${cfg}.d/ipset-${ipset_name}.conf"
+        [ -d "/tmp/dnsmasq.${cfg}.d" ] && cp -f "${config_file_name}" "/tmp/dnsmasq.${cfg}.d/ipset-${ipset_name}.conf"
     }
     config_load dhcp
     config_foreach link_config dnsmasq
