@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=naiveproxy
-PKG_VERSION:=132.0.6834.79-2
+PKG_VERSION:=133.0.6943.49-1
 PKG_RELEASE:=1
 
 # intel 80386 & riscv64 & cortex-a76
@@ -24,11 +24,11 @@ ifeq ($(ARCH_PACKAGES),aarch64_cortex-a53)
 else ifeq ($(ARCH_PACKAGES),aarch64_cortex-a72)
   PKG_HASH:=2849150414fd7ab21552cedc21bfa1c41a6ff1e1c3aa3cc2d44436aab74912e1
 else ifeq ($(ARCH_PACKAGES),aarch64_generic)
-  PKG_HASH:=71fbc160c5f8df9ae96d7f91b646e24f2eb142928df8186fe50a9d73cfac842e
+  PKG_HASH:=110c0174bc9aeca41c03d207b1aa714c71528c03a8e148699b094473f8ef53f4
 else ifeq ($(ARCH_PACKAGES),arm_arm1176jzf-s_vfp)
   PKG_HASH:=7ce0ba453c09f9978e421575aca96b34d381ec1731f19d29d8e16e7968fb1888
 else ifeq ($(ARCH_PACKAGES),arm_arm926ej-s)
-  PKG_HASH:=000d92d9865f406dfd9bf7848c455312a1ce42a778c970f484bdf93c3a805973
+  PKG_HASH:=04f237181162ff3e8d83f9f864efead8dcec60a5d75c69b7b112aa0d3107c7a7
 else ifeq ($(ARCH_PACKAGES),arm_cortex-a15_neon-vfpv4)
   PKG_HASH:=94f22ed0e270d47b035ec6380ce6b26db93ff01382641c222f2db11929cc0856
 else ifeq ($(ARCH_PACKAGES),arm_cortex-a5_vfpv4)
@@ -52,15 +52,15 @@ else ifeq ($(ARCH_PACKAGES),arm_mpcore)
 else ifeq ($(ARCH_PACKAGES),arm_xscale)
   PKG_HASH:=d8160e3b0963d124eb91762c6df9d96207510dc1a5f28f32f3ad6f6133f49d75
 else ifeq ($(ARCH_PACKAGES),mipsel_24kc)
-  PKG_HASH:=f9c0a4049388058aaa881aa13385470497beaeeca6473baf6539905a75d098bf
+  PKG_HASH:=6759691bfbd271ac310be605a95d73755c34cc9dbac02d506fb272203733a937
 else ifeq ($(ARCH_PACKAGES),mipsel_mips32)
   PKG_HASH:=fd2520202c1cbe82498c90594a71cd1ed6aa4d8a6d470cf84871fd1d8f646380
 else ifeq ($(ARCH_PACKAGES),riscv64)
-  PKG_HASH:=557f8054e7643d6cdbbd1f70922ddf131f60ad03fb2cadf994ac15c9303d84ed
+  PKG_HASH:=8723cdb1e77c59bf90888c6f4ae1dac8ffb0de369b5de69249a62c5eefae2507
 else ifeq ($(ARCH_PACKAGES),x86)
-  PKG_HASH:=eab01156720906345230f6fb9cde7580b88e66799a4bdcef58636addbcab9a6c
+  PKG_HASH:=50729ddb13d31caacc1cd2f6e96d7813478c7e693ae006e3a78e71fea82a2f23
 else ifeq ($(ARCH_PACKAGES),x86_64)
-  PKG_HASH:=95fd43646b86512ea46d87ccd0b5adda50aefe5c53dbcfd4b47930a146bec8b9
+  PKG_HASH:=eb8fd19699363122f2dbaba8e8dce681e32415b8c485cbb5525ea26c107f1a0f
 else
   PKG_HASH:=dummy
 endif
